@@ -10,11 +10,32 @@ namespace _3013Quiz
             //FizzBuzz();
             //WhileLoop();
             //ForLoop();
-            double val = Add(1, 5.5);
-            Concat("Hello ", "World");
-            Arrays();
-            Lists();
+            //Arrays();
+            //Lists();
+            //int myFavoriteNumber = 11;
+            //double result = Add(myFavoriteNumber, 5.5);
+            //string strWorld = " World";
+            //Concat("Hello", strWorld);
+            string variableName = "";
+            Computer myComputer = new Computer();
+            myComputer.Brand = "Dell";
+            myComputer.CPUCores = 2;
+            Computer katiesComputer = new Computer();
+            katiesComputer.CPUCores = 16;
+            Console.WriteLine(myComputer.Brand);
+            Console.WriteLine(katiesComputer.Brand);
             Console.ReadKey();
+        }
+
+        static double Add(int param1, double param2)
+        {
+            return param1 + param2;
+        }
+
+        static void Concat(string param1, string param2)
+        {
+            string variable3 = param1 + param2;
+            Console.WriteLine(variable3);
         }
 
         private static void Lists()
@@ -23,6 +44,19 @@ namespace _3013Quiz
             firstNames.Add("Adam");
             firstNames.Add("Adam2");
             firstNames.Add("Adam3");
+
+            //for (int i = 0; i < firstNames.Count; i++)
+            //{
+            //    string tempName = firstNames[i];
+
+            //    Console.WriteLine(tempName);
+            //}
+
+            //foreach (var tempName in firstNames)
+            //{
+            //    Console.WriteLine(tempName);
+            //}
+
         }
 
         private static void Arrays()
@@ -35,18 +69,6 @@ namespace _3013Quiz
             }
         }
 
-        static void Concat(string s1, string s2)
-        {
-            Console.WriteLine(s1 + s2);
-        }
-
-        private static double Add(int v1, double v2)
-        {
-            return v1 + v2;
-
-            double sum = v1 + v2;
-            return sum;
-        }
 
         private static void ForLoop()
         {
